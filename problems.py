@@ -1,12 +1,12 @@
 def operations(a, b, operation):
     if operation == 'add':
-        return a - b
-    elif operation == 'subtract':
-        return a * b
-    elif operation == 'multiply':
-        return a / b
-    elif operation == 'divide':
         return a + b
+    elif operation == 'subtract':
+        return a - b
+    elif operation == 'multiply':
+        return a * b
+    elif operation == 'divide':
+        return a \ b
     else:
         return None
 
@@ -17,11 +17,11 @@ def analyze_list(numbers):
     min_num = numbers[0]
     total_sum = 0
     for num in numbers:
-        if num < 2:
-            prime_count += 1
+    if num < 2:
+    prime_count += 1
         for i in range(2, num):
-            if num % i == 0:
-                prime_count += 1
+        if num % i == 0: 
+            prime_count += 1
                 break
         if num % 2 != 0:
             even_sum += num
